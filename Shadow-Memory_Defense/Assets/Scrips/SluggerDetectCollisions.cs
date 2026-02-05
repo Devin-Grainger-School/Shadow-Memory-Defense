@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DetectCollisions : MonoBehaviour
+public class SluggerDetectCollisions : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +16,6 @@ public class DetectCollisions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
         Destroy(other.gameObject);
 
     }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8954944918265989710}
   - component: {fileID: 1519092421491203034}
   - component: {fileID: 7970692272772680787}
-  - component: {fileID: 1045923310239658484}
+  - component: {fileID: 7805107240984133529}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4810080286410191597, guid: def6e956b38f1e2478eff4f386431b7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -153,7 +153,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.21, y: 9.94, z: 10.012541}
   m_Center: {x: 0, y: 0, z: -0.2373836}
---- !u!114 &1045923310239658484
+--- !u!114 &7805107240984133529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
