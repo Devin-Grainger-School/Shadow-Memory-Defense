@@ -1,6 +1,6 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,13 +16,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        myUI.text = score.ToString();
     }
     //Public Score
     public void AddScore(int value)
     {
-        score +- value;
+        score += value;
         Debug.Log("Score =" + score);
-        myUI.text = "Score:" score.ToString();
+        string v = "Score:" + score.ToString();
+        myUI.text = v;
     }
 }

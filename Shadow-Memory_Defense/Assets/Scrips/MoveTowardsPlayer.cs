@@ -6,7 +6,10 @@ public class MoveTowardsPlayer : MonoBehaviour
     public float speed = 2f;
     private float minDistance = 1f;
     private float range;
-
+    private void Start()
+    {
+        target = GameObject.Find("Player").transform;
+    }
     void Update()
     {
         range = Vector2.Distance(transform.position, target.position);
