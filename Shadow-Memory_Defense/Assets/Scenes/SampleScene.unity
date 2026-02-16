@@ -1763,6 +1763,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4631,7 +4632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 57576129968197066, guid: 7cdb578982601324399cfda9f770a458, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4
+      value: -1.775
       objectReference: {fileID: 0}
     - target: {fileID: 57576129968197066, guid: 7cdb578982601324399cfda9f770a458, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4660,6 +4661,10 @@ PrefabInstance:
     - target: {fileID: 57576129968197066, guid: 7cdb578982601324399cfda9f770a458, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331880171511270949, guid: 7cdb578982601324399cfda9f770a458, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.465
       objectReference: {fileID: 0}
     - target: {fileID: 2558304247038277629, guid: 7cdb578982601324399cfda9f770a458, type: 3}
       propertyPath: m_Name
