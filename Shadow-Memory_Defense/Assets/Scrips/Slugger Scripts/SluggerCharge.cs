@@ -3,6 +3,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SluggerCharge : MonoBehaviour
 {
+    public int Slugger;
     public GameObject[] SluggerPrefabs;
     public GameObject UpSlugger;
     public GameObject DownSlugger;
