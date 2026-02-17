@@ -19,4 +19,11 @@ public class GameOver : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.name == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
