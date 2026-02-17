@@ -19,11 +19,8 @@ public class GameOver : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void OnCollisionEnter(Collision coll)
+    void OnTriggerEnter(Collider other)
     {
-        if (coll.gameObject.name == "Player")
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
