@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7002421098426214036}
   m_Layer: 0
   m_Name: LeftSlugger
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,4 +232,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f44874512272e64c93513181601becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster: 0

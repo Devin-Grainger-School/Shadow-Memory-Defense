@@ -11,23 +11,13 @@ public class DestroyOutOfBounds : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+ void OnTriggerEnter(Collider other)
     {
-        if (transform.position.y > topBound)
+        // Check if the object the projectile collided with has the "Enemy" tag
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Finish"))
         {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
-        else if (transform.position.y < lowerBound)
-        {
-            Destroy(gameObject);
-        }
-        if (transform.position.x > topBound)
-        {
-            Destroy(gameObject);
-        }
-        else if (transform.position.x < lowerBound)
-        {
-            Destroy(gameObject);
-        }
+
     }
 }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1323699282753575151}
   m_Layer: 0
   m_Name: Monster
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bc5fb87f4a78a4f8c73211c6a01e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 57576129968197066, guid: 7cdb578982601324399cfda9f770a458, type: 3}
+  target: {fileID: 0}
   speed: 2
 --- !u!54 &1519092421491203034
 Rigidbody:
