@@ -7,7 +7,7 @@ public class MonsterSpawnerBottom : MonoBehaviour
     private float spawnRangeY = 10;
     private float spawnRangeZ = -.4f;
     private float startDelay = 2;
-    private float spawnInterval = 4f;
+    private float spawnInterval = Random.Range(2f, 4f);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

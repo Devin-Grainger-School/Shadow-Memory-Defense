@@ -9,7 +9,7 @@ public class SluggerDetectCollisions : MonoBehaviour
         // Check if the object the projectile collided with has the "Enemy" tag
         if (other.gameObject == GameObject.FindGameObjectWithTag("Respawn"))
         {
-            Destroy(other.gameObject);
+            Destroy(GameObject.Find("Monster(Clone)"));
         }
 
     }
