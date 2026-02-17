@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    private float topBound = 15;
-    private float lowerBound = 15;
+    private float topBound = 35;
+    private float lowerBound = -35;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,13 +11,23 @@ public class DestroyOutOfBounds : MonoBehaviour
     }
 
     // Update is called once per frame
- void OnTriggerEnter(Collider other)
+    void Update()
     {
-        // Check if the object the projectile collided with has the "Enemy" tag
-        if (other.gameObject == GameObject.FindGameObjectWithTag("Finish"))
+        if (transform.position.y > topBound)
         {
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
-
+        else if (transform.position.y < lowerBound)
+        {
+            Destroy(gameObject);
+        }
+        if (transform.position.x > topBound)
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.x < lowerBound)
+        {
+            Destroy(gameObject);
+        }
     }
 }

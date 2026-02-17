@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 15.0f;
-    public float xRange = 10;
+    public float xRange = 20;
 
     public GameObject projectilePrefab;
 
@@ -26,21 +26,21 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector2.up * verticalInput * Time.deltaTime * speed);
         // Keeping Player in the box
-        if (transform.position.x < -xRange)
+        if (transform.position.x < -20)
         {
-            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-20, transform.position.y, transform.position.z);
         }
-        if (transform.position.x > xRange)
+        if (transform.position.x > 20)
         {
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+            transform.position = new Vector3(20, transform.position.y, transform.position.z);
         }
-        if (transform.position.y < -10)
+        if (transform.position.y < -20)
         {
-            transform.position = new Vector3(transform.position.x, -10, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -20, transform.position.z);
         }
-        if (transform.position.y > 10)
+        if (transform.position.y > 20)
         {
-            transform.position = new Vector3(transform.position.x, 10, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 20, transform.position.z);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

@@ -6,7 +6,7 @@ public class MonsterSpwaner : MonoBehaviour
     private float spawnRangeX = 10;
     private float spawnRangeZ = -.4f;
     private float startDelay = 2;
-    private float spawnInterval = 1.5f;
+    private float spawnInterval = 4f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,8 +21,9 @@ public class MonsterSpwaner : MonoBehaviour
 
     private void SpawnRandomMonster()
     {
+        spawnInterval = Random.Range(2f, 4f);
         //Randomly spawn monster at the top 
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 15, spawnRangeZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 25, spawnRangeZ);
         int monsterIndex = Random.Range(0, MonsterPrefabs.Length);
         Instantiate(MonsterPrefabs[monsterIndex], spawnPos, MonsterPrefabs[monsterIndex].transform.rotation);
     }

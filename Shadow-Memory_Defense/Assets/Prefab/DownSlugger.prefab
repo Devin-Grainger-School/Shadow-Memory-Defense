@@ -122,6 +122,8 @@ GameObject:
   - component: {fileID: 581883645982982009}
   - component: {fileID: 295049308069105350}
   - component: {fileID: 7159599895589619516}
+  - component: {fileID: 9069237737625015637}
+  - component: {fileID: 2009029039119912474}
   m_Layer: 0
   m_Name: Slugger
   m_TagString: Untagged
@@ -232,3 +234,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f44874512272e64c93513181601becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9069237737625015637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6146588363010989730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454eb6cb83f24534b9a4b288ea943d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2009029039119912474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6146588363010989730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0421a88fc3af9e49b806b3ac54d9e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAmount: {x: 0, y: 0, z: 0}
