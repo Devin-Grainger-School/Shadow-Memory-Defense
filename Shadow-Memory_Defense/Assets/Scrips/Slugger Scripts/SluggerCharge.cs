@@ -3,6 +3,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class SluggerCharge : MonoBehaviour
 {
+    public GameObject[] SluggerPrefabs;
     public GameObject UpSlugger;
     public GameObject DownSlugger;
     public GameObject LeftSlugger;
@@ -17,8 +18,6 @@ public class SluggerCharge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SluggerShot >= 2)
-        {
             if (Input.GetKeyDown(KeyCode.I))
             {
                 // Launch a projectile from the player up
@@ -45,6 +44,5 @@ public class SluggerCharge : MonoBehaviour
                 Instantiate(Page, transform.position, Page.transform.rotation);
             }
         }
-    }
 
 }
