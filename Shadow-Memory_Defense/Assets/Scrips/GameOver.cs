@@ -19,12 +19,4 @@ public class GameOver : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void OnTriggerEnter(Collider other)
-    {
-        // Sends game over
-        Debug.Log("Game Over!");
-        playerDead += 10;
-
-    }
-    
 }
