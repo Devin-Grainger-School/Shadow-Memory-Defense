@@ -4,7 +4,6 @@ public class MonsterSpwaner : MonoBehaviour
 {
     public GameObject[] MonsterPrefabs;
     private float spawnRangeX = 10;
-    private float spawnRangeY = 10;
     private float spawnRangeZ = -.4f;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
